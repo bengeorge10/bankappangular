@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="bankapp.css">
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                
+                <div class="main">
+                    <h4>Withdrawal</h4><br>
+                <form (ngSubmit)="withdraw()">
+                
+                
+                <input type="text" class="text" name="wacno" [(ngModel)]="wacno" placeholder="Account number"><br><br>
+                <input type="password" class="text" name="pswd" [(ngModel)]="wpswd" placeholder="Password" ><br> <br>
+                <input type="text" class="text" name="amount" [(ngModel)]="wamount" placeholder="Amount"><br><br>
+               
+                <input type="submit" value="Withdrawal" class="button butefct"> <br><br>
+                <!-- <input type="submit" value="Deposit" class="button button1 butefct"> <br><br> -->
+            </form>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                
+                <div class="main">
+                    <h4>Deposit</h4><br>
+                <form (ngSubmit)="deposit()">
+                
+                
+                <input type="text" class="text" name="acno" [(ngModel)]="acno" placeholder="Account number"><br><br>
+                
+                <input type="password" class="text" name="pswd" [(ngModel)]="pswd" placeholder="Password" ><br> <br>
+                <input type="text" class="text" name="amount" [(ngModel)]="amount" placeholder="Amount"><br><br>
+                <!-- <input type="submit" value="Withdrawal" class="button butefct"> <br><br> -->
+                <input type="submit" value="Deposit" class="button button1 butefct"> <br><br>
+            </form>
+            </div></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+</html>
